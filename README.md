@@ -21,6 +21,7 @@ To avoid classical TIME_WAIT flood:
 
 # Available tests
 
-- normal-sinatra: Out of the box synchronous Sinatra
+- single-threaded-sinatra: lock per request, purely synchronous sinatra
+- threaded-sinatra: Threaded Sinatra (through EM::Deferrable)
 - async-sinatra: Sinatra + Async Sinatra (https://github.com/raggi/async_sinatra)
 - goliath: Goliath

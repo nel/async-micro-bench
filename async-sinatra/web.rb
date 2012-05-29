@@ -1,8 +1,8 @@
 require 'sinatra/async'
 
 class Sinasync < Sinatra::Base
-  register Sinatra::Async
   set :port, 8080
+  register Sinatra::Async
 
   aget('/') do
     n = 0.5
