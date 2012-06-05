@@ -1,0 +1,6 @@
+source :rubygems
+
+gem "mongoid", "~> 3.0.0.rc"
+gem 'async_sinatra'
+gem 'thin'
+gem 'foreman'
