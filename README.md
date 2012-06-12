@@ -9,7 +9,7 @@ Server will be started on port 8080
 
 # Run test suite
 
-Execute ./run-bench, you can use DEBUG=1 to get output quick of the service
+Execute bundle exec ./run-bench, you can use DEBUG=1 to get output quick of the service
 
 # Env
 
