@@ -50,7 +50,7 @@ class Bench
 
   #MacOS specific
   def process_optimization
-    "ulimit -n 2048"
+    "ulimit -n 2048 && sleep 1"
   end
 
   def pwd
@@ -71,7 +71,7 @@ Bench.run_system_optimization!
 
 Bench.each do |b|
   if ENV['DEBUG'] 
-    puts b.run!("curl  http://127.0.0.1:8080/")
+    puts b.run!("curl -s http://127.0.0.1:8080/ 2>&1 && echo ''")
   else
     output = b.run!("siege -c 25 -b -t 10s http://127.0.0.1:8080/ &>/dev/null && siege -c 25 -b -t100s http://127.0.0.1:8080/ 2>&1")
     File.open(File.join(b.pwd, 'Benchmark.md'), 'w+') { |f| f.write output }
