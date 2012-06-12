@@ -1,24 +1,21 @@
-started with pid 5304
+started with pid 9003
 ** SIEGE 2.71
 ** Preparing 25 concurrent users for battle.
-The server is now under siege...
+The server is now under siege...[[1;32malert[0m] socket: 95633408 select timed out: Operation timed out
+
 Lifting the server siege...-      done.
 
-Transactions:		       78552 hits
-Availability:		      100.00 %
+Transactions:		         173 hits
+Availability:		       99.43 %
 Elapsed time:		       99.98 secs
-Data transferred:	        0.60 MB
-Response time:		        0.03 secs
-Transaction rate:	      785.68 trans/sec
-Throughput:		        0.01 MB/sec
-Concurrency:		       24.98
-Successful transactions:       78552
-Failed transactions:	           0
-Longest transaction:	        0.18
-Shortest transaction:	        0.00
+Data transferred:	        0.00 MB
+Response time:		       13.26 secs
+Transaction rate:	        1.73 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		       22.95
+Successful transactions:         173
+Failed transactions:	           1
+Longest transaction:	       28.56
+Shortest transaction:	       11.52
  
-FILE: /usr/local/var/siege.log
-You can disable this annoying message by editing
-the .siegerc file in your home directory; change
-the directive 'show-logfile' to false.
 exited with code 0

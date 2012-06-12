@@ -8,7 +8,7 @@ class Sinasync < Sinatra::Base
   register Sinatra::Async
 
   aget('/') do
-    body {  Content.trigger_insert } 
+    body {  Content.trigger_sleep } 
   end
 end
 

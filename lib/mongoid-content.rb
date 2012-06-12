@@ -23,6 +23,11 @@ class Content
     "read 100"
   end
 
+  def self.trigger_sleep
+    Content.mongo_session.command('eval' => "sleep(500)")
+    'sleep 0.5s'
+  end
+
   def self_read_write_bench
     trigger_read
     trigger_insert
